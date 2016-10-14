@@ -10,7 +10,7 @@ public class Gugudan {
 	void input(){
 		Scanner A = new Scanner(System.in);
 		
-		System.out.println("Ãâ·ÂÇÏ°í ½ÍÀº ±¸±¸´Ü(Q:Á¾·á)");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.(Q:ì¢…ë£Œ)");
 		this.num = A.nextInt();
 		output();
 	}
@@ -25,8 +25,12 @@ public class Gugudan {
 				this.ggd = array[i-1];
 				System.out.println(this.num+"*"+i+"="+ggd);
 			}
-		
 			
+			
+		}
+		else {
+			System.out.println("ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”>> ");
+			new Gugudan().input();
 		}
 	}
 	
