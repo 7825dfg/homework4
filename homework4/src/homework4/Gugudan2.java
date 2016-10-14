@@ -10,7 +10,7 @@ public class Gugudan2 {
 	void input(){
 		Scanner A = new Scanner(System.in);
 		
-		System.out.println("E:Â¦¼ö´Ü, O:È¦¼ö´Ü(Q:Á¾·á)");
+		System.out.println("E:ì§ìˆ˜ë‹¨, O:í™€ìˆ˜ë‹¨(Q:ì¢…ë£Œ)");
 		this.sel = A.next();
 		output();
 	}
@@ -20,20 +20,26 @@ public class Gugudan2 {
 		int array[] = new int[9];
 		
 		if(sel.equals("E")){
-			for(int i=1; i<5; i++){
-				for(int j=1; j<10; j++){
-					array[j-1] = j * (i*2);
-					System.out.println(2*i+"*"+j);
+			for(int i=1; i<10; i++){
+				for(int j=1; j<5; j++){
+					array[i-1] = 2*j*i;
+					this.ggd = array[i-1]; 
+					System.out.print(2*j+"*"+i+"="+ggd+" ");
+					
 				}
+				System.out.printf("\n");
 			}
 		}
 		
+		
 		else if(sel.equals("O")){
-			for(int i=1; i<5; i++){
-				for(int j=1; j<10; j++){
-					array[j-1] = j * ((2*i)+1);
-					System.out.println(((2*i)+1)+"*"+j);
+			for(int i=1; i<10; i++){
+				for(int j=1; j<5; j++){
+					array[i-1] = i * ((2*j)+1);
+					this.ggd = array[i-1];
+					System.out.print(((2*j)+1)+"*"+i+"="+ggd+" ");
 				}
+				System.out.printf("\n");
 			}
 		}
 		
