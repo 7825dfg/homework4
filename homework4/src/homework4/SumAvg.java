@@ -11,10 +11,10 @@ public class SumAvg {
 		
 		Scanner A = new Scanner(System.in);
 		
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·Â(Q:Á¾·á)");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.(Q:ì¢…ë£Œ)");
 	    
 	    while(A.hasNextInt()){
-	    	System.out.println("¼ıÀÚ¸¦ ÀÔ·Â(Q:Á¾·á)");
+	    	System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.(Q:ì¢…ë£Œ)");
 	    	this.num = A.nextInt();
 	    	this.sum += this.num;
 	    	this.count++;
@@ -30,7 +30,7 @@ public class SumAvg {
 	
 	void output(){
 		this.avg = this.sum/this.count;
-		System.out.println("ÇÕ°è´Â "+sum+"ÀÌ°í, Æò±ÕÀº "+avg+"ÀÔ´Ï´Ù.");
+		System.out.println("ì´í•©ì€ "+sum+"ì´ê³ , í‰ê· ì€ "+avg+"ì…ë‹ˆë‹¤.");
 		
 		
 	}
