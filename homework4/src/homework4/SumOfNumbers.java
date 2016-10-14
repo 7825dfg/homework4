@@ -7,7 +7,7 @@ public class SumOfNumbers {
 	int count;
 	void input(){
 	   Scanner A = new Scanner(System.in);
-	   System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+	   System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 	   this.num = A.nextInt();
 	   output();
    }
@@ -16,6 +16,6 @@ public class SumOfNumbers {
 		for(int i=0; i <= num; i++){
 			this.count += i;
 		}
-		System.out.println("ÃÑÇÕÀº "+count+" ÀÔ´Ï´Ù.");
+		System.out.println("ì´í•©ì€ "+count+" ì…ë‹ˆë‹¤.");
 	}
 }
