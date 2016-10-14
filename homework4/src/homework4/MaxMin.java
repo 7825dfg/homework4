@@ -13,9 +13,9 @@ public class MaxMin {
 	
 	void input(){
 		Scanner A = new Scanner(System.in);
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.(Q:Á¾·á)");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.(Q:ì¢…ë£Œ)");
 		while(A.hasNextInt()){
-			System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.(Q:Á¾·á)");
+			System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.(Q:ì¢…ë£Œ)");
 			this.num = A.nextInt();
 			array.add(count, this.num);;
 			this.count++;
@@ -38,8 +38,8 @@ public class MaxMin {
 		for(int j=0; j <this.count; j++){
 			if(min>array.get(j)) min = array.get(j);
 		}
-		System.out.println("ÃÖ´ñ°ªÀº "+max+"ÀÌ°í,");
-		System.out.println("ÃÖ¼Ú°ªÀº "+min+"ÀÔ´Ï´Ù.");
+		System.out.println("ìµœëŒ“ê°’ì€"+max+"ì´ê³ ,");
+		System.out.println("ìµœì†Ÿê°’ì€ "+min+"ì…ë‹ˆë‹¤.");
 		
 	}
 }
