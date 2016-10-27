@@ -9,9 +9,7 @@ public class ExamForWhile {
 	  while(true){
 		String cho;
 		Scanner A = new Scanner(System.in);
-		
-		
-		
+					
 		System.out.println("1. 1부터 입력한 수까지 더하기");
 		System.out.println("2. 최댓값/최솟값 구하기");
 		System.out.println("3. 입력받은 숫자의 합계와 평균구하기");
@@ -21,22 +19,24 @@ public class ExamForWhile {
 		System.out.println("원하는 메뉴는 >> ");
 		cho = A.next();
 		
+		
+		// 아래는 if와 else 구문을 사용하지 않아서 메뉴를 실행할 때마다 "---------다시 입력하세요."가 뜹니다.
 		if(cho.equals("1")){
 			new SumOfNumbers().input();
 		}
-		if(cho.equals("2")){
+		else if(cho.equals("2")){
 			new MaxMin().input();
 		}
-		if(cho.equals("3")){
+		else if(cho.equals("3")){
 			new SumAvg().input();
 		}
-		if(cho.equals("4")){
+		else if(cho.equals("4")){
 			new Gugudan().input();
 		}
-	    if(cho.equals("5")){
+		else if(cho.equals("5")){
 	    	new Gugudan2().input();
 	    }
-	    if(cho.equals("6")){
+		else if(cho.equals("6")){
 	    	System.exit(0);
 	    }
 	    else{
